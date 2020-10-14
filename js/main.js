@@ -25,23 +25,18 @@ console.log ("Price: ", price);
 
 //STAMPA BIGLIETTI
 // -20% per i minorenni
-var discount1 = price - 0.2;
+var venti = (price / 100) * 20;
+var quaranta = (price / 100) * 40;
+var discount1 = price - venti;
+var discount2 = price - quaranta;
 
 if (age < 18) {
-  document.getElementById('print').innerHTML  = "Your 20% discounted ticket costs: " + discount1 + " " + "€";
-  console.log ("Discounted under 18 Price: ", price - 0.2);
-} else if (price) {
-  document.getElementById('print').innerHTML  = "Your ticket costs: " + price + "€";
-  console.log ("Price: ", price);
-}
-
-//-40% per gli over 65
-var discount2 = price - 0.4;
-
-if (age > 65) {
-  document.getElementById('print').innerHTML  = "Your 40% discounted ticket costs: " + discount2 + " " + "€";
-  console.log ("Discounted over 65 Price: ", price - 0.4);
-} else if (price) {
-  document.getElementById('print').innerHTML  = "Your ticket costs: " + price + "€";
+  document.getElementById('print').innerHTML  = "Your 20% discounted ticket costs: " + discount1.toFixed(2) + " " + "€";
+  console.log ("Discounted under 18 Price: " + price - 0.2);
+} else if (age > 65) {
+  document.getElementById('print').innerHTML  = "Your 40% discounted ticket costs: " + discount2.toFixed(2) + " " + "€";
+  console.log ("Discounted over 65 Price: " + price - 0.4);
+} else {
+  document.getElementById('print').innerHTML  = "Your ticket costs: " + price.toFixed(2) + "€";
   console.log ("Price: ", price);
 }
