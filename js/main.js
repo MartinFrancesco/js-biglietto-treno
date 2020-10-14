@@ -23,18 +23,23 @@ var x = 0.21;
 var price = destination * x;
 console.log ("Price: ", price);
 
+//STAMPA BIGLIETTI
 // -20% per i minorenni
+var discount1 = price - 0.2;
+
 if (age < 18) {
-  console.log ("Discounted Price: ", price - 0.2);
+  document.getElementById('print').innerHTML  = "Your 20% discounted ticket costs: " + discount1 + " " + "€";
+  console.log ("Discounted under 18 Price: ", price - 0.2);
 } else if (price) {
   console.log ("Price: ", price);
 }
 
 //-40% per gli over 65
+var discount2 = price - 0.4;
+
 if (age > 65) {
-  console.log ("Discounted Price: ", price - 0.4);
+  document.getElementById('print').innerHTML  = "Your 20% discounted ticket costs: " + discount2 + " " + "€";
+  console.log ("Discounted over 65 Price: ", price - 0.4);
 } else if (price) {
   console.log ("Price: ", price);
 }
-
-// stampare a schermo il prezzo calcolato
