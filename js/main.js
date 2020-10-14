@@ -4,7 +4,7 @@ console.log (destination);
 
 if (destination == NaN) {
   alert ("Errore!");
-} else if (destination) {
+} else if (destination != NaN) {
   console.log (destination);
 }
 
