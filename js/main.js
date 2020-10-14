@@ -38,7 +38,7 @@ if (age < 18) {
 var discount2 = price - 0.4;
 
 if (age > 65) {
-  document.getElementById('print').innerHTML  = "Your 20% discounted ticket costs: " + discount2 + " " + "€";
+  document.getElementById('print').innerHTML  = "Your 40% discounted ticket costs: " + discount2 + " " + "€";
   console.log ("Discounted over 65 Price: ", price - 0.4);
 } else if (price) {
   console.log ("Price: ", price);
