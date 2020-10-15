@@ -32,10 +32,10 @@ var discount2 = price - quaranta;
 
 if (age < 18) {
   document.getElementById('print').innerHTML  = "Your 20% discounted ticket costs: " + discount1.toFixed(2) + " " + "€";
-  console.log ("Discounted under 18 Price: " + price - 0.2);
+  console.log ("Discounted under 18 Price: " + discount1);
 } else if (age > 65) {
   document.getElementById('print').innerHTML  = "Your 40% discounted ticket costs: " + discount2.toFixed(2) + " " + "€";
-  console.log ("Discounted over 65 Price: " + price - 0.4);
+  console.log ("Discounted over 65 Price: " + discount2);
 } else {
   document.getElementById('print').innerHTML  = "Your ticket costs: " + price.toFixed(2) + "€";
   console.log ("Price: ", price);
