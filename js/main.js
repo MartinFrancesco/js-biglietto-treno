@@ -24,7 +24,7 @@ var price = destination * x;
 console.log ("Price: ", price);
 
 //STAMPA BIGLIETTI
-// -20% per i minorenni
+// -20% per i minorenni, -40% per gli over 65
 var venti = (price / 100) * 20;
 var quaranta = (price / 100) * 40;
 var discount1 = price - venti;
